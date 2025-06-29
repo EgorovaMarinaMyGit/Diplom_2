@@ -25,20 +25,3 @@ USER_DATA_NO_PASSWORD = {
         "email": "vbnhgf@mail.ru",
         "password": ""
     }
-
-
-ORDER_DATA_1 = {
-
-}
-
-ORDER_DATA_2 = {
-
-}
-
-ORDER_DATA_3 = {
-
-}
-
-ORDER_DATA_4 = {
-
-}
