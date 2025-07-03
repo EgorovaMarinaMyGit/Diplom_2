@@ -15,7 +15,6 @@ class UsersMethods:
     def user_login(self, params):
         response = requests.post(f'{BASE_URL}{USERS_URL}{LOGIN_URL}', data=params)
         return response.json(), response.status_code
-        #return response.json(), response.status_code, response.json().get('"accessToken')
 
     @allure.step("Изменение данных пользователя")
     def change_user_data(self, headers, params):

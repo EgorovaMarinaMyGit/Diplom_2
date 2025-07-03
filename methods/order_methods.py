@@ -37,10 +37,8 @@ class OrderMethods:
     def get_order_of_user(self, headers):
         response = requests.get(f'{BASE_URL}{ORDERS_URL}', headers=headers)
         response_json = response.json()
-        #orders = response_json.get("orders", [])
         orders = response_json.get("orders", [])
         order_id = None
         if orders:
             order_id = orders[0].get('_id')
         return response_json, response.status_code, order_id
-        #return response_json, response.status_code, orders[0].get('_id')
